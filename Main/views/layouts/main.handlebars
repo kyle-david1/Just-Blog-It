@@ -4,24 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fund My Project!</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../../public/css/style.css">
+  
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+      <ul class="flex">
+      <li class="flex-1 mr-2">
+        <a class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white" href="#">Home</a>
+      </li>
+      <li class="flex-1 mr-2">
+        <a class="text-center block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4" href="#">dashboard</a>
+      </li>
+      <li class="text-center flex-1">
+        <a class="block py-2 px-4 text-gray-400 cursor-not-allowed" href="#">Logout</a>
+      </li>
+    </ul>
       <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
+        <a href="/">The Tech Blog</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        <a href="/Just-Blog-It/Main/views/dashboard.handlebars">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/Just-Blog-It/Main/views/login.handlebars">login</a>
         {{/if}}
       </nav>
     </header>

@@ -1,6 +1,7 @@
 module.exports = {
 
-  content: ["./src/**/*.{html,js}"],
+  content: ["./views/**/*.{handlebars}"],
+            
 
   theme: {
 
